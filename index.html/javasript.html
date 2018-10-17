@@ -1,0 +1,94 @@
+ 
+<html>
+
+      <head>
+          
+             <title>Javasript</title>
+          
+             <style type="text/css">
+                 
+                 .circle{
+                     width:200px;
+                     height:200px;
+                     border-radius
+                 }
+          
+          
+          </style>
+    
+    
+          </head>
+    
+     <body>
+         
+<!--           <button onclick="alert('Hi!')">click here!</button>-->
+          <p id="world">Hello World!</p>
+         
+<!--               how to change text using html-->
+         
+             <button id="change">Change Text</button>
+         
+             <p id="second-paragraph">Javascript is so easy and cool mehn...</p>  
+             
+              <button id="hello">Append Text</button>
+             
+              <p id="emptyParagraph"></p>
+         
+              <button id="createParagraph">Create text</button>
+         
+               <p id="MoreText">This is some text</p>
+         
+              <button id="StyleText">Style text</button>
+         
+         <div class="circle" id="diff-circles">
+         
+         </div>
+         
+              
+         
+            <script type="text/javascript">
+            
+//            alert('Hi guys!');
+//                document means we are getting something within the document content
+//                to change your content using javascrpit you use the formula below
+                
+         document.getElementById("world").innerHTML='Hello Guys!';
+                
+        document.getElementById("change").onclick = function() {
+        
+        document.getElementById("world").innerHTML ="Hello Seun";
+//            alert("button clicked");
+        }
+            document.getElementById("hello").onclick =function() {
+                
+        document.getElementById("second-paragraph").innerHTML = "I think " + document.getElementById("second-paragraph").innerHTML + "awesome";
+            }
+            
+            
+            
+
+    document.getElementById("createParagraph").onclick = function() {
+        
+  document.getElementById("emptyParagraph").innerHTML = "Click Here";
+        
+    }
+//         To freestyle
+        document.getElementById("StyleText").onclick = function() {
+        
+  document.getElementById("MoreText").style.fontSize = "20px";
+        
+        }
+//              To make it disappear you replace fontsize or color with display and enter the string attribute to none
+        
+        
+         
+                
+                
+                
+            </script>
+    
+    
+    </body>
+
+
+</html>
